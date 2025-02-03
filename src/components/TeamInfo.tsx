@@ -56,7 +56,7 @@ const TeamInfo: React.FC = () => {
             <Col>
               <TeamInfoBox
                 name="Emmanuel Munoz"
-                imageSrc="https://placehold.co/100"
+                imageSrc="/cs-2340-team-website/avatars/emmanuelmunoz.png"
               />
             </Col>
           </Row>
