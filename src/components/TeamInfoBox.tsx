@@ -1,10 +1,9 @@
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 import SocialIcons from "./SocialIcons";
-import { StaticImageData } from "next/image";
 
 interface TeamInfoProps {
   name?: string;
-  imageSrc?: StaticImageData | string;
+  imageSrc?: string;
   websiteUrl?: string;
   linkedInProfileId?: string;
   githubUsername?: string;
@@ -25,7 +24,15 @@ const TeamInfo: React.FC<TeamInfoProps> = ({
 }) => {
   return (
     <>
-      <Image src={typeof imageSrc === 'string' ? imageSrc : imageSrc?.src} alt={`${name} profile picture`} rounded style={{ height: "100px", width: "100px" }}/>
+      {imageSrc && (
+        <Image
+          src={`${imageSrc}`}
+          alt={`${name} profile picture`}
+          height={100}
+          width={100}
+          className="rounded"
+        />
+      )}
       <p>{name}</p>
       <SocialIcons
         WebsiteURL={websiteUrl}

@@ -1,8 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
 import TeamInfoBox from "./TeamInfoBox";
-import aryamannSheoranAvatar from "/public/avatars/aryamannsheoran.png";
-import jamesKerraneAvatar from "/public/avatars/jameskerrane.jpg";
-import palashPatelAvatar from "/public/avatars/palashpatel.jpg";
 
 const TeamInfo: React.FC = () => {
   return (
@@ -13,13 +10,13 @@ const TeamInfo: React.FC = () => {
           <Row>
             <Col>
               <TeamInfoBox
-                imageSrc={aryamannSheoranAvatar}
+                imageSrc="/cs-2340-team-website/avatars/aryamannsheoran.png"
                 name="Aryamann Sheoran"
               />
             </Col>
             <Col>
               <TeamInfoBox
-                imageSrc={jamesKerraneAvatar}
+                imageSrc="/cs-2340-team-website/avatars/jameskerrane.jpg"
                 name="James Kerrane"
                 websiteUrl="https://www.jameskerrane.com"
                 linkedInProfileId="jameskerrane"
@@ -39,7 +36,7 @@ const TeamInfo: React.FC = () => {
             <Col>
               <TeamInfoBox
                 name="Palash Patel"
-                imageSrc={ palashPatelAvatar}
+                imageSrc="/cs-2340-team-website/avatars/palashpatel.jpg"
                 linkedInProfileId="palash-patel-1b001a210"
               />
             </Col>
@@ -51,7 +48,7 @@ const TeamInfo: React.FC = () => {
             </Col>
           </Row>
         </Col>
-        <div className="vr d-none d-md-block p-0 mx-2"/>
+        <div className="vr d-none d-md-block p-0 mx-2" />
         <hr className="d-block d-md-none" />
         <Col sm={1}>
           <h2 className="mt-4">Mentor</h2>
