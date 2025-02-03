@@ -17,11 +17,11 @@ const HomePage: React.FC = () => {
         <Container>
           <Row>
             <Col>
-              <Image src="https://placehold.co/100" rounded />
+              <Image src="https://placehold.co/100" alt="placeholder profile picture image" rounded />
               <p>Aryamann Sheoran</p>
             </Col>
             <Col>
-              <Image src="https://placehold.co/100" rounded />
+              <Image src="https://placehold.co/100" alt="placeholder profile picture image" rounded />
               <p>James Kerrane</p>
               <Stack direction="horizontal" gap={1}>
                 <div><a href="https://www.linkedin.com/in/jameskerrane"><Linkedin /></a></div>
@@ -33,15 +33,15 @@ const HomePage: React.FC = () => {
               </Stack>
             </Col>
             <Col>
-              <Image src="https://placehold.co/100" rounded />
+              <Image src="https://placehold.co/100" alt="placeholder profile picture image" rounded />
               <p>Michael Wittland Jr.</p>
             </Col>
             <Col>
-              <Image src="https://placehold.co/100" rounded />
+              <Image src="https://placehold.co/100" alt="placeholder profile picture image" rounded />
               <p>Palash Patel</p>
             </Col>
             <Col>
-              <Image src="https://placehold.co/100" rounded />
+              <Image src="https://placehold.co/100" alt="placeholder profile picture image" rounded />
               <p>Shane Hanley</p>
             </Col>
           </Row>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Button, Container } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 
 const ProjectsCarousel: React.FC = () => {
