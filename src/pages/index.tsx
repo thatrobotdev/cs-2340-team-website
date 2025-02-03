@@ -13,15 +13,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container as="main" className="py-4 px-3 mx-auto">
+      <Container as="main" className="py-4 px-3">
         <Header />
-
-        <h1>Crafting <mark className="bg-neon-yellow">fun</mark>, <mark className="bg-neon-magenta">innovative</mark>, and <mark className="bg-neon-cyan">seamless</mark> full-stack web experiences.</h1>
-
+          <h1>Crafting <mark className="bg-neon-yellow">fun</mark>, <mark className="bg-neon-magenta">innovative</mark>, and <mark className="bg-neon-cyan">seamless</mark> full-stack web experiences.</h1>
         <HomePage />
-
-        <hr className="col-1 my-5 mx-0" />
-
         <Footer />
       </Container>
     </>
