@@ -13,3 +13,5 @@ cd cs-2340-team-website/
 npm install
 npm start
 ```
+
+Navigate to [http://localhost:3000/cs-2340-team-website](http://localhost:3000/cs-2340-team-website) to see the locally hosted site!

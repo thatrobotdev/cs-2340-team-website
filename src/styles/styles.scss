@@ -1,4 +1,13 @@
-$success: #7952b3;
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$mycolors: (
+  "neon-yellow": #fdff00,
+  "neon-magenta": #00ff04,
+  "neon-cyan": #00c5ff
+);
+
+$theme-colors: map-merge($theme-colors, $mycolors);
 
 @import "bootstrap/scss/bootstrap.scss";
 
