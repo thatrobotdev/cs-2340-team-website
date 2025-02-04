@@ -1,3 +1,4 @@
+/*
 import Image from "next/image";
 import SocialIcons from "./SocialIcons";
 
@@ -47,3 +48,4 @@ const TeamInfo: React.FC<TeamInfoProps> = ({
 };
 
 export default TeamInfo;
+*/

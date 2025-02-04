@@ -3,8 +3,51 @@ import Container from "react-bootstrap/Container";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HomePage from "@/components/HomePage";
+import Cards from "@/components/Cards"
 
 export default function Home() {
+
+  const members = [
+    {
+      name: "Aryamann Sheoran",
+      imageSrc: "/cs-2340-team-website/avatars/aryamannsheoran.png",
+      role: "Creative Leader",
+      github: "aryamannsheoran",
+      linkedin: "aryamannsheoran",
+    },
+    {
+      name: "James Kerrane",
+      imageSrc: "/cs-2340-team-website/avatars/jameskerrane.jpg",
+      role: "Sales Manager",
+      github: "thatrobotdev",
+      linkedin: "jameskerrane",
+      twitter: "jameskerrane",
+    },
+    {
+      name: "Michael Wittland Jr.",
+      imageSrc: "https://placehold.co/100",
+      role: "Web Developer",
+      linkedin: "michael-wittland-323081295/",
+    },
+    {
+      name: "Palash Patel",
+      imageSrc: "/cs-2340-team-website/avatars/palashpatel.jpg",
+      role: "Web Designer",
+      linkedin: "palash-patel-1b001a210",
+    },
+    {
+      name: "Shane Hanley",
+      imageSrc: "https://placehold.co/100",
+      role: "Web Designer",
+    },
+    {
+      name: "Emmanuel Munoz",
+      imageSrc: "/cs-2340-team-website/avatars/emmanuelmunoz.png",
+      role: "Mentor",
+    },
+  ];
+
+
   return (
     <>
       <Head>
@@ -15,7 +58,7 @@ export default function Home() {
       </Head>
       <Container as="main" className="py-4 px-3">
         <Header />
-          <h1>Crafting <mark className="bg-neon-yellow">fun</mark>, <mark className="bg-neon-magenta">innovative</mark>, and <mark className="bg-neon-cyan">seamless</mark> full-stack web experiences.</h1>
+        <Cards members={members} />
         <HomePage />
         <Footer />
       </Container>
