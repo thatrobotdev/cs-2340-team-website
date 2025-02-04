@@ -1,3 +1,4 @@
+/*
 import { Col, Container, Row } from "react-bootstrap";
 import TeamInfoBox from "./TeamInfoBox";
 
@@ -67,3 +68,4 @@ const TeamInfo: React.FC = () => {
 };
 
 export default TeamInfo;
+*/
