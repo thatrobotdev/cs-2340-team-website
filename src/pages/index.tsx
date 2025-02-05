@@ -9,16 +9,25 @@ export default function Home() {
 
   const members = [
     {
+      name: "Palash Patel",
+      imageSrc: "/cs-2340-team-website/avatars/palashpatel.jpg",
+      role: "Scrum Master",
+      description: "Hello! My name is Palash Patel. I am a 1st year " +
+      "computer science student and have taken the role of scrum master " +
+      "and front end developer for this project. ",
+      linkedin: "palash-patel-1b001a210",
+    },
+    {
       name: "Aryamann Sheoran",
       imageSrc: "/cs-2340-team-website/avatars/aryamannsheoran.png",
-      role: "Creative Leader",
+      role: "Product Owner",
       github: "aryamannsheoran",
       linkedin: "aryamannsheoran",
     },
     {
       name: "James Kerrane",
       imageSrc: "/cs-2340-team-website/avatars/jameskerrane.jpg",
-      role: "Sales Manager",
+      role: "Developer",
       github: "thatrobotdev",
       linkedin: "jameskerrane",
       twitter: "jameskerrane",
@@ -26,19 +35,13 @@ export default function Home() {
     {
       name: "Michael Wittland Jr.",
       imageSrc: "https://placehold.co/100",
-      role: "Web Developer",
+      role: "Developer",
       linkedin: "michael-wittland-323081295/",
-    },
-    {
-      name: "Palash Patel",
-      imageSrc: "/cs-2340-team-website/avatars/palashpatel.jpg",
-      role: "Web Designer",
-      linkedin: "palash-patel-1b001a210",
     },
     {
       name: "Shane Hanley",
       imageSrc: "https://placehold.co/100",
-      role: "Web Designer",
+      role: "Developer",
     },
     {
       name: "Emmanuel Munoz",
