@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 
 const Header: React.FC = () => {
   return (
-    <Navbar expand="lg" className="px-3" style={navbarStyle}>
+    <Navbar expand="lg" className="px-3 sticky-header" style={navbarStyle}>
       <Container>
         {/* Brand / Logo */}
         <Navbar.Brand>
@@ -49,9 +49,11 @@ const Header: React.FC = () => {
 
 // Inline Styles
 const navbarStyle: React.CSSProperties = {
-  backgroundColor: "#222",
+  backgroundColor: "rgba(34, 34, 34, 0.9)",
+  backdropFilter: "blur(10px)",
   padding: "1rem",
   boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+  zIndex: 10,
 };
 
 const githubLinkStyle: React.CSSProperties = {
@@ -62,6 +64,7 @@ const githubLinkStyle: React.CSSProperties = {
   transition: "all 0.3s ease-in-out",
   color: "#6A8EAE",
   textDecoration: "none",
+  cursor: "pointer",
 };
 
 export default Header;

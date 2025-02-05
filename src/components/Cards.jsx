@@ -1,3 +1,4 @@
+// Updated Cards Component
 import React from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
 import Image from "next/image";
@@ -6,27 +7,42 @@ const Cards = ({ members }) => {
   return (
     <Container className="py-5">
       <h2 className="text-center mb-5" style={headingStyle}>
-        Meet Our Team
+        MEET OUR TEAM!
       </h2>
       <Row className="g-4 justify-content-center">
         {members.map((member, index) => (
-          <Col key={index} xs={12} sm={6} md={4} lg={3} className="d-flex justify-content-center">
-            <Card className="h-100 shadow-sm border-0" style={cardStyle}>
-              <Card.Body className="text-center">
-                <div className="d-flex justify-content-center mb-3">
+          <Col
+            key={index}
+            xs={12}
+            sm={6}
+            md={4}
+            lg={3}
+            className="d-flex justify-content-center"
+          >
+            <Card
+              className="h-100 shadow-lg border-0 card-hover"
+              style={cardStyle}
+            >
+              <Card.Body className="">
+                <div className="d-flex mb-3">
                   <Image
                     src={member.imageSrc}
                     alt={`${member.name} profile`}
-                    width={100}
-                    height={100}
-                    className="rounded-circle"
+                    width={250}
+                    height={250}
+                    //border-radius={15}
+                    //className="rounded-circle"
+                    style={{borderRadius:"15px"}}
                   />
                 </div>
                 <Card.Title style={cardTitleStyle}>{member.name}</Card.Title>
                 <Card.Text className="text-muted" style={cardTextStyle}>
-                  {member.description || "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+                  {member.description ||
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
                 </Card.Text>
-                <p className="text-primary fw-bold">{member.role || "Team Member"}</p>
+                <p className="text-primary fw-bold">
+                  {member.role || "Team Member"}
+                </p>
                 <div>
                   {member.github && (
                     <a
@@ -77,11 +93,14 @@ const headingStyle = {
 
 const cardStyle = {
   borderRadius: "15px",
+  background: "linear-gradient(145deg, #ffffff, #e6e6e6)",
+  transition: "all 0.3s ease-in-out",
 };
 
 const cardTitleStyle = {
   fontSize: "1.25rem",
   fontWeight: "bold",
+  color: "#6A8EAE",
 };
 
 const cardTextStyle = {
