@@ -13,8 +13,21 @@ $theme-colors: map-merge($theme-colors, $mycolors);
 
 body {
   padding: 1.5rem;
+  font-family: "Oswald", sans-serif !important;
+}
+
+.openSanFont {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.hover-style:hover {
+  color: #FF5252 !important;
 }
 
 .nav-link:hover {
-  color: #6A8EAE !important;
+  color: #FF5252 !important;
+}
+
+.text-role {
+  color: #ff7a7a;
 }

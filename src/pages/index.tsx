@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HomePage from "@/components/HomePage";
 import Cards from "@/components/Cards"
+import BackImg from "@/components/BackImg";
 
 export default function Home() {
 
@@ -36,6 +37,8 @@ export default function Home() {
       name: "Michael Wittland Jr.",
       imageSrc: "https://placehold.co/100",
       role: "Developer",
+      description: "Hello! My name is Michael Wittland. I am a 2nd year " +
+      "CS strength working on backend development for this project.",
       linkedin: "michael-wittland-323081295/",
     },
     {
@@ -61,6 +64,7 @@ export default function Home() {
       </Head>
       <Container as="main" className="py-4 px-3">
         <Header />
+        <BackImg />
         <Cards members={members} />
         <HomePage />
         <Footer />
