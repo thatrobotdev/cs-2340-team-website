@@ -22,20 +22,23 @@ export default function Home() {
       name: "Aryamann Sheoran",
       imageSrc: "/cs-2340-team-website/avatars/aryamannsheoran.png",
       role: "Product Owner",
-      github: "aryamannsheoran",
       linkedin: "aryamannsheoran",
+      github: "aryamannsheoran",
     },
     {
       name: "James Kerrane",
       imageSrc: "/cs-2340-team-website/avatars/jameskerrane.jpg",
       role: "Developer",
-      github: "thatrobotdev",
+      description: "Hello! I am a 1st year Computer Science student studying Media & Theory at Georgia Tech. Over the course of this project, I focused on building the team website and frontend development.",
+      website: "https://jameskerrane.com",
       linkedin: "jameskerrane",
-      twitter: "jameskerrane",
+      github: "thatrobotdev",
+      mastodon: "thatrobotdev",
+      bluesky: "jameskerrane.com",
+      twitter: "jameskerrane",      
     },
     {
       name: "Michael Wittland Jr.",
-      imageSrc: "https://placehold.co/100",
       role: "Developer",
       description: "Hello! My name is Michael Wittland. I am a 2nd year " +
       "CS strength working on backend development for this project.",
@@ -43,12 +46,10 @@ export default function Home() {
     },
     {
       name: "Shane Hanley",
-      imageSrc: "https://placehold.co/100",
       role: "Developer",
     },
     {
       name: "Emmanuel Munoz",
-      imageSrc: "/cs-2340-team-website/avatars/emmanuelmunoz.png",
       role: "Mentor",
     },
   ];

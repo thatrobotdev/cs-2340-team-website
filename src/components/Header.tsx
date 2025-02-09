@@ -26,6 +26,9 @@ const Header: React.FC = () => {
               <Link href="/projects" className="nav-link text-light">
                 Projects
               </Link>
+              <Link href="/licenses" className="nav-link text-light">
+                Licenses
+              </Link>
             </Nav.Item>
 
             {/* GitHub Link */}
