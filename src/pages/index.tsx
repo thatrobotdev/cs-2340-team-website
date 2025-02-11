@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import HomePage from "@/components/HomePage";
 import Cards from "@/components/Cards"
 import BackImg from "@/components/BackImg";
+import Cards from "@/components/Cards"
+import BackImg from "@/components/BackImg";
 
 export default function Home() {
 
