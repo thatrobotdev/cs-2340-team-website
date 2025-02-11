@@ -149,9 +149,9 @@ const ProjectsShowcase: React.FC = () => {
             </p>
             <p style={{ margin: "4px 0", paddingBottom: "10px" }}>
               <b>3. Sprint Execution:</b> We began development! We each begun working on tasks on the Trello Board in chronological order, to maintain an organized workflow. 
-              For collaborative programming, we used <span><a href="https://trello.com/b/dMDI5bpG/cs-2340-project" className="text-link-style">GitHub</a></span>. GitHub's version control 
+              For collaborative programming, we used <span><a href="https://trello.com/b/dMDI5bpG/cs-2340-project" className="text-link-style">GitHub</a></span>. GitHub&apos;s version control 
               and collaborative design made working together a seamless experience, without a worry of messing up previously implemented code. Our progress was documented
-              in our team discord chat under "Stand-Up Summaries" to keep tabs on progress and ensuring daily progress by team memebers.
+              in our team discord chat under Stand-Up Summaries to keep tabs on progress and ensuring daily progress by team memebers.
             </p>
 
             <p style={{ margin: "4px 0", paddingBottom: "10px" }}>
