@@ -3,7 +3,9 @@ import ProjectsShowcase from "./ProjectsShowcase";
 const HomePage: React.FC = () => {
   return (
     <>
-      <ProjectsShowcase/>
+      <div style={{justifyContent: "left"}}>
+        <ProjectsShowcase/>
+      </div>
     </>
   );
 };

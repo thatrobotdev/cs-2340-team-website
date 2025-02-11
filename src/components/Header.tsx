@@ -20,10 +20,10 @@ const Header: React.FC = () => {
           <Nav className="ms-auto d-flex align-items-center gap-4">
             {/* Inline Links */}
             <Nav.Item className="d-flex gap-3">
-              <Link href="/projects" className="nav-link text-light">
-                About
+              <Link href="/#meet-team-navigation" className="nav-link text-light">
+                Meet Our Team
               </Link>
-              <Link href="/projects" className="nav-link text-light">
+              <Link href="/#project-navigation" className="nav-link text-light">
                 Projects
               </Link>
             </Nav.Item>

@@ -28,6 +28,28 @@ body {
   color: #FF5252 !important;
 }
 
+.red-color-theme {
+  color: #FF5252 !important;
+}
+
 .text-role {
   color: #ff7a7a;
+}
+
+.colored-underline {
+  color: #FF5252;
+  text-decoration-thickness: 3px;
+}
+
+.black-text {
+  color: black;
+}
+
+.text-link-style {
+  color: black;
+  font-weight: bold;
+}
+
+.text-link-style:hover {
+  color: #FF5252 !important;
 }

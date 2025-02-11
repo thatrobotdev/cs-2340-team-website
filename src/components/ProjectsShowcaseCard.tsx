@@ -7,7 +7,7 @@ interface ProjectsShowcaseCardProps {
   title?: string;
   description?: string;
   projectLink?: string;
-  learnMoreLink?: string;
+  processLink?: string;
 }
 
 const ProjectsShowcaseCard: React.FC<ProjectsShowcaseCardProps> = ({
@@ -16,10 +16,10 @@ const ProjectsShowcaseCard: React.FC<ProjectsShowcaseCardProps> = ({
   title,
   description,
   projectLink,
-  learnMoreLink,
+  processLink,
 }) => {
   return (
-    <Card className="mx-auto project-card" style={cardStyle}>
+    <Card className="mx-auto project-card " style={cardStyle}>
       <Card.Img
         variant="top"
         src={imageSrc}
@@ -28,26 +28,27 @@ const ProjectsShowcaseCard: React.FC<ProjectsShowcaseCardProps> = ({
         className="project-card-img"
       />
       <Card.Body className="text-center">
-        {title && <Card.Title className="project-title">{title}</Card.Title>}
+        {title && <u style={{fontSize:"30px"}} className="colored-underline fw-bold"><Card.Title className="black-text fw-bold fs-3">{title}</Card.Title></u>}
         {description && <Card.Text className="project-description">{description}</Card.Text>}
         {projectLink && (
           <Card.Link
-            className="link-underline-primary project-link"
-            href={projectLink}
+            className=" text-link-style"
+            href={processLink}
             target="_blank"
             rel="noopener noreferrer"
           >
             View Project
           </Card.Link>
+          
         )}
-        {learnMoreLink && (
+        {processLink && (
           <Card.Link
-            href={learnMoreLink}
-            className="project-link"
+            href={projectLink}
+            className="text-link-style"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Source
+            View GitHub
           </Card.Link>
         )}
       </Card.Body>
@@ -57,8 +58,10 @@ const ProjectsShowcaseCard: React.FC<ProjectsShowcaseCardProps> = ({
 
 const cardStyle: React.CSSProperties = {
   borderRadius: "15px",
+  border: " 20px", 
   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
   transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+  paddingBottom: "20px"
 };
 
 export default ProjectsShowcaseCard;

@@ -16,7 +16,7 @@ function BackImg() {
                     left: "50%",
                     transform: "translate(-50%, -50%)", // Center the text
                     color: "white",
-                    fontSize: "6.8rem",
+                    fontSize: "5.5rem",
                     textAlign: "center",
                 }}
             >
@@ -33,7 +33,7 @@ function BackImg() {
                     textAlign: "center",
                     paddingTop: "10px"
                 }}
-            >____________________
+            >_________________
             </h1>
         </div>
     );

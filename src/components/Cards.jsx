@@ -18,16 +18,14 @@ const Cards = ({ members }) => {
         WELCOME
       </h2>
       
-      <div className="openSanFont" style={{textAlign: "center", margin: "0 auto", paddingBottom:"50px", width: "75%"}}>
-        Hello, team 4 reporting! This is team 4 nefkijenfunieufneiunifneiunf
-        eviunrficweun ficvuew uf vcoebvf ucybeouyf vbceouwybcnouewyb'ceuybeuybc
-        cuewybrcuyebwucyey bceybcureybcnu ibi in in yb8yb uyb.
+      <div style={{textAlign: "center", margin: "0 auto", paddingBottom:"50px", width: "75%"}}>
+        Hello, team 4 reporting! This is our team website, which showcases our final movie store project along with our workflow and collaboration. We hope you take the time to enjoy our website! Thank you!
       </div>
 
       <hr style={{width:"80%", textAlign:"center", margin: "0 auto", paddingTop: "50px",}}></hr>
       
-      <div style={{ }}>
-        <h2 className="text-center" 
+      <div style={{ padding: "0px"}}>
+        <h2 className="text-center" id="meet-team-navigation"
           style={{
           fontWeight: "bold",
           fontSize: "4.5rem",
@@ -41,11 +39,11 @@ const Cards = ({ members }) => {
             left: "50%",
             transform: "translate(-50%, -50%)", 
             color: "#FF5252",
-            fontSize: "7rem",
+            fontSize: "4rem",
             textAlign: "center",
             marginTop: "-20px",
           }}
-              >____________________
+              >___________________
         </h1>
       </div>
       <Row className="g-4 justify-content-center">
@@ -88,7 +86,7 @@ const Cards = ({ members }) => {
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
                 </Card.Text>
                 <p className="text-role fw-bold" >
-                  {member.role || "Team Member"}
+                  {member.role || "Team Member"} | {member.devRole || "Developer"}
                 </p>
                 <div>
                   {member.github && (
