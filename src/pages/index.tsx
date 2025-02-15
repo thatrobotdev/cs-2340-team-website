@@ -42,8 +42,11 @@ export default function Home() {
       imageSrc: "/cs-2340-team-website/avatars/jameskerrane.jpg",
       role: "Developer",
       devRole: "Front End Developer",
-      github: "thatrobotdev",
+      description: "Hello! I am a 1st year Computer Science student studying Media & Theory at Georgia Tech. Over the course of this project, I focused on building the team website and frontend development.",
       linkedin: "jameskerrane",
+      github: "thatrobotdev",
+      mastodon: "thatrobotdev",
+      bluesky: "jameskerrane.com",
       twitter: "jameskerrane",
     },
     {
