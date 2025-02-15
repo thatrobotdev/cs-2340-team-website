@@ -1,27 +1,19 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
+@import "@fontsource/oswald";
 
-$mycolors: (
-  "neon-yellow": #fdff00,
-  "neon-magenta": #00ff04,
-  "neon-cyan": #00c5ff
-);
+$dark: rgba(34, 34, 34, 0.9);
+$primary: #FF5252;
+$enable-important-utilities: false;
 
-$theme-colors: map-merge($theme-colors, $mycolors);
-
-@import "bootstrap/scss/bootstrap.scss";
-
-body {
-  padding: 1.5rem;
-  font-family: "Oswald", sans-serif !important;
+.oswald {
+  font-family: "Oswald", sans-serif;
 }
 
-.openSanFont {
-  font-family: 'Open Sans', sans-serif !important;
+.link-light:hover {
+  --bs-link-hover-color: #FF5252;
 }
 
-.hover-style:hover {
-  color: #FF5252 !important;
+a.link-light:hover {
+  color: #FF5252;
 }
 
 .nav-link:hover {
@@ -53,3 +45,5 @@ body {
 .text-link-style:hover {
   color: #FF5252 !important;
 }
+
+@import "bootstrap";

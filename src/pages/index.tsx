@@ -2,9 +2,11 @@ import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import HomePage from "@/components/HomePage";
-import Cards from "@/components/Cards";
+import MeetOurTeam from "@/components/MeetOurTeam";
 import BackImg from "@/components/BackImg";
+import Introduction from "@/components/Introduction";
+import Licenses from "@/components/Licenses";
+import ProjectsShowcase from "@/components/ProjectsShowcase";
 
 export default function Home() {
   const members = [
@@ -79,7 +81,7 @@ export default function Home() {
         <title>CS 2340 Team 4</title>
         <meta
           name="description"
-          content="The team website for CS 2340 Team 4"
+          content="The team website for CS 2340 Team 4."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -87,8 +89,12 @@ export default function Home() {
       <Container as="main" className="py-4 px-3">
         <Header />
         <BackImg />
-        <Cards members={members} />
-        <HomePage />
+        <Introduction />
+        <section id="meet-our-team">
+          <MeetOurTeam members={members}/>
+        </section>
+        <ProjectsShowcase />
+        <Licenses />
         <Footer />
       </Container>
     </>
