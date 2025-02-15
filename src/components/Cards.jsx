@@ -4,32 +4,51 @@ import { Card, Row, Col, Container } from "react-bootstrap";
 import Image from "next/image";
 import "@fontsource/oswald";
 
-
 const Cards = ({ members }) => {
   return (
     <Container className="py-5">
-
-      <h2 className="text-center " 
+      <h2
+        className="text-center "
         style={{
           fontWeight: "bold",
           fontSize: "3rem",
           paddingBottom: "10px",
-        }}>
+        }}
+      >
         WELCOME
       </h2>
-      
-      <div style={{textAlign: "center", margin: "0 auto", paddingBottom:"50px", width: "75%"}}>
-        Hello, team 4 reporting! This is our team website, which showcases our final movie store project along with our workflow and collaboration. We hope you take the time to enjoy our website! Thank you!
+
+      <div
+        style={{
+          textAlign: "center",
+          margin: "0 auto",
+          paddingBottom: "50px",
+          width: "75%",
+        }}
+      >
+        Hello, team 4 reporting! This is our team website, which showcases our
+        final movie store project along with our workflow and collaboration. We
+        hope you take the time to enjoy our website! Thank you!
       </div>
 
-      <hr style={{width:"80%", textAlign:"center", margin: "0 auto", paddingTop: "50px",}}></hr>
-      
-      <div style={{ padding: "0px"}}>
-        <h2 className="text-center" id="meet-team-navigation"
+      <hr
+        style={{
+          width: "80%",
+          textAlign: "center",
+          margin: "0 auto",
+          paddingTop: "50px",
+        }}
+      ></hr>
+
+      <div style={{ padding: "0px" }}>
+        <h2
+          className="text-center"
+          id="meet-team-navigation"
           style={{
-          fontWeight: "bold",
-          fontSize: "4.5rem",
-          }}>
+            fontWeight: "bold",
+            fontSize: "4.5rem",
+          }}
+        >
           MEET OUR TEAM
         </h2>
         <h1
@@ -37,13 +56,14 @@ const Cards = ({ members }) => {
             position: "relative",
             top: "50%",
             left: "50%",
-            transform: "translate(-50%, -50%)", 
+            transform: "translate(-50%, -50%)",
             color: "#FF5252",
             fontSize: "4rem",
             textAlign: "center",
             marginTop: "-20px",
           }}
-              >___________________
+        >
+          ___________________
         </h1>
       </div>
       <Row className="g-4 justify-content-center">
@@ -61,11 +81,13 @@ const Cards = ({ members }) => {
               style={cardStyle}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "scale(1.05)";
-                e.currentTarget.style.border = "5px solid rgba(255, 82, 82, 0.5)";
+                e.currentTarget.style.border =
+                  "5px solid rgba(255, 82, 82, 0.5)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "scale(1.0)";
-                e.currentTarget.style.border = "2px solid rgba(155, 155, 155, 0.5)";
+                e.currentTarget.style.border =
+                  "2px solid rgba(155, 155, 155, 0.5)";
               }}
             >
               <Card.Body className="">
@@ -77,7 +99,7 @@ const Cards = ({ members }) => {
                     height={250}
                     //border-radius={15}
                     //className="rounded-circle"
-                    style={{borderRadius:"15px"}}
+                    style={{ borderRadius: "15px" }}
                   />
                 </div>
                 <Card.Title style={cardTitleStyle}>{member.name}</Card.Title>
@@ -85,8 +107,9 @@ const Cards = ({ members }) => {
                   {member.description ||
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
                 </Card.Text>
-                <p className="text-role fw-bold" >
-                  {member.role || "Team Member"} | {member.devRole || "Developer"}
+                <p className="text-role fw-bold">
+                  {member.role || "Team Member"} |{" "}
+                  {member.devRole || "Developer"}
                 </p>
                 <div>
                   {member.github && (
@@ -129,12 +152,14 @@ const Cards = ({ members }) => {
   );
 };
 
+/*
 // Inline Styles
 const headingStyle = {
   color: "#FF5252",
   fontWeight: "bold",
   fontSize: "2rem",
 };
+*/
 
 const cardStyle = {
   borderRadius: "15px",
@@ -143,11 +168,12 @@ const cardStyle = {
   border: "2px solid rgba(155, 155, 155, 0.5)",
 };
 
+/*
 const cardHoverStyle = {
   transform: "scale(1.05)", // Slightly enlarges the card on hover
   boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.2)", // Adds a subtle shadow effect
 };
-
+*/
 
 const cardTitleStyle = {
   fontSize: "1.25rem",
