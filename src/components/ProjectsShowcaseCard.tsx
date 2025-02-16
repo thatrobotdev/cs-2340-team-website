@@ -7,6 +7,7 @@ interface ProjectsShowcaseCardProps {
   description?: string;
   projectLink?: string;
   processLink?: string;
+  videoLink?: string;
 }
 
 const ProjectsShowcaseCard: React.FC<ProjectsShowcaseCardProps> = ({
@@ -16,9 +17,10 @@ const ProjectsShowcaseCard: React.FC<ProjectsShowcaseCardProps> = ({
   description,
   projectLink,
   processLink,
+  videoLink,
 }) => {
   return (
-    <Card className="mx-auto project-card " style={cardStyle}>
+    <Card className="mx-auto project-card" style={cardStyle}>
       <Card.Img
         variant="top"
         src={imageSrc}
@@ -27,7 +29,7 @@ const ProjectsShowcaseCard: React.FC<ProjectsShowcaseCardProps> = ({
         className="project-card-img"
       />
       <Card.Body className="text-center">
-        {title && <u style={{fontSize:"30px"}} className="colored-underline fw-bold"><Card.Title className="black-text fw-bold fs-3">{title}</Card.Title></u>}
+        {title && <u style={{fontSize:"30px"}} className=" fw-bold"><Card.Title className="black-text fw-bold fs-3">{title}</Card.Title></u>}
         {description && <Card.Text className="project-description">{description}</Card.Text>}
         {projectLink && (
           <Card.Link
@@ -48,6 +50,17 @@ const ProjectsShowcaseCard: React.FC<ProjectsShowcaseCardProps> = ({
             rel="noopener noreferrer"
           >
             View GitHub
+          </Card.Link>
+        )}
+
+        {videoLink && (
+          <Card.Link
+            href={videoLink}
+            className="text-link-style"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Video
           </Card.Link>
         )}
       </Card.Body>

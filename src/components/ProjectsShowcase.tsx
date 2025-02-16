@@ -52,7 +52,7 @@ function ProjectsShowcase() {
         ____________________
       </h1>
       <Container className="py-4">
-        <Row gap={4}>
+        <Row gap={40}>
           {/* Left Column: Project Card */}
           <Col xs={12} md={8} lg={6}>
             <div
@@ -60,6 +60,7 @@ function ProjectsShowcase() {
               onMouseEnter={cardHoverEffect}
               onMouseLeave={cardHoverEffectOut}
             >
+
               <ProjectsShowcaseCard
                 imageSrc={"/cs-2340-team-website/moviesstore.png"}
                 imageAlt={"Screenshot of moviesstore project."}
@@ -69,9 +70,9 @@ function ProjectsShowcase() {
                 }
                 projectLink={"https://github.com/thatrobotdev/moviesstore"}
                 processLink={"https://thatrobotdev.pythonanywhere.com/"}
+                videoLink={"https://drive.google.com/file/d/1icCEcxxs61XWzocsz1eZnpGsZGa1Yd-f/preview"}
               />
             </div>
-
             <div
               style={{
                 border: "solid 2px #aaa",
@@ -81,8 +82,15 @@ function ProjectsShowcase() {
               onMouseEnter={cardHoverEffect}
               onMouseLeave={cardHoverEffectOut}
             >
-              <h2>Demo</h2>
-              <iframe src="https://drive.google.com/file/d/1icCEcxxs61XWzocsz1eZnpGsZGa1Yd-f/preview"></iframe>
+              
+              <u
+                  style={{ fontSize: "30px", paddingBottom: "30px"}}
+                  className="colored-underline fw-bold"
+                >
+                  <h3 className="black-text">DEMO</h3>
+                </u>
+                <div style={{padding: "10px"}}></div>
+              <iframe style={{width:"100%", height: "400px"}} src="https://drive.google.com/file/d/1icCEcxxs61XWzocsz1eZnpGsZGa1Yd-f/preview"></iframe>
             </div>
           </Col>
 
