@@ -23,7 +23,7 @@ export default function Home() {
     },
     {
       name: "Aryamann Sheoran",
-      imageSrc: "/cs-2340-team-website/avatars/aryamannsheoran.png",
+      imageSrc: "/cs-2340-team-website/avatars/aryamann.png",
       role: "Product Owner",
       devRole: "Full Stack Developer",
       description:
@@ -61,7 +61,7 @@ export default function Home() {
     },
     {
       name: "Shane Hanley",
-      imageSrc: "https://placehold.co/100",
+      imageSrc: "/cs-2340-team-website/avatars/shane.png",
       role: "Developer",
       devRole: "Back-End Developer",
       description:
