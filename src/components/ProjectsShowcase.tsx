@@ -60,17 +60,33 @@ function ProjectsShowcase() {
               onMouseEnter={cardHoverEffect}
               onMouseLeave={cardHoverEffectOut}
             >
-
               <ProjectsShowcaseCard
-                imageSrc={"/cs-2340-team-website/moviesstore.png"}
-                imageAlt={"Screenshot of moviesstore project."}
+                slides={[
+                  {
+                    src: "/cs-2340-team-website/moviesstore/homepage.png",
+                    alt: "Screenshot of moviesstore homepage.",
+                    caption: "Homepage",
+                  },
+                  {
+                    src: "/cs-2340-team-website/moviesstore/movie-page.png",
+                    alt: "Screenshot of moviesstore homepage.",
+                    caption: "Movie Page",
+                  },
+                  {
+                    src: "/cs-2340-team-website/moviesstore/about-page.png",
+                    alt: "Screenshot of moviesstore homepage.",
+                    caption: "About Page",
+                  },
+                ]}
                 title={"Movies Store"}
                 description={
                   "A showcase of a full-stack movie store application using Django."
                 }
                 projectLink={"https://github.com/thatrobotdev/moviesstore"}
                 processLink={"https://thatrobotdev.pythonanywhere.com/"}
-                videoLink={"https://drive.google.com/file/d/1icCEcxxs61XWzocsz1eZnpGsZGa1Yd-f/preview"}
+                videoLink={
+                  "https://drive.google.com/file/d/1icCEcxxs61XWzocsz1eZnpGsZGa1Yd-f/preview"
+                }
               />
             </div>
             <div
@@ -82,15 +98,17 @@ function ProjectsShowcase() {
               onMouseEnter={cardHoverEffect}
               onMouseLeave={cardHoverEffectOut}
             >
-              
               <u
-                  style={{ fontSize: "30px", paddingBottom: "30px"}}
-                  className="colored-underline fw-bold"
-                >
-                  <h3 className="black-text">DEMO</h3>
-                </u>
-                <div style={{padding: "10px"}}></div>
-              <iframe style={{width:"100%", height: "400px"}} src="https://drive.google.com/file/d/1icCEcxxs61XWzocsz1eZnpGsZGa1Yd-f/preview"></iframe>
+                style={{ fontSize: "30px", paddingBottom: "30px" }}
+                className="colored-underline fw-bold"
+              >
+                <h3 className="black-text">DEMO</h3>
+              </u>
+              <div style={{ padding: "10px" }}></div>
+              <iframe
+                style={{ width: "100%", height: "400px" }}
+                src="https://drive.google.com/file/d/1icCEcxxs61XWzocsz1eZnpGsZGa1Yd-f/preview"
+              ></iframe>
             </div>
           </Col>
 
@@ -189,21 +207,39 @@ function ProjectsShowcase() {
                       paddingTop: "10px",
                     }}
                   >
-                    <b>1. Product Backlog:</b> Using <a
+                    <b>1. Product Backlog:</b> Using{" "}
+                    <a
                       href="https://trello.com/b/dMDI5bpG/cs-2340-project"
-                      className="text-link-style">Trello</a> we created an extensive product backlog for designating tasks by priority, roles, categories, and order. In this backlog we sorted each individual user story as a task, undergoing a pipeline till it is classified as a finished task.
+                      className="text-link-style"
+                    >
+                      Trello
+                    </a>{" "}
+                    we created an extensive product backlog for designating
+                    tasks by priority, roles, categories, and order. In this
+                    backlog we sorted each individual user story as a task,
+                    undergoing a pipeline till it is classified as a finished
+                    task.
                   </p>
                   <p style={{ margin: "4px 0", paddingBottom: "10px" }}>
-                    <b>2. Sprint Planning:</b> We collaborated to create a Sprint Planning Document to help us to start the project, organize responsibilities,
-                    create designated meeting times, and more. The sprint
-                    planning document was incredibly helpful, as it laid the
-                    groundwork we needed to get started!
+                    <b>2. Sprint Planning:</b> We collaborated to create a
+                    Sprint Planning Document to help us to start the project,
+                    organize responsibilities, create designated meeting times,
+                    and more. The sprint planning document was incredibly
+                    helpful, as it laid the groundwork we needed to get started!
                   </p>
                   <p style={{ margin: "4px 0", paddingBottom: "10px" }}>
                     <b>3. Sprint Execution:</b> We began development! We each
                     begun working on tasks on the Trello Board in chronological
                     order, to maintain an organized workflow. For collaborative
-                    programming, we used <a href="https://github.com/thatrobotdev/cs-2340-team-website" className="text-link-style">GitHub</a>. GitHub&apos;s version control and collaborative design made working together a seamless experience, without a worry
+                    programming, we used{" "}
+                    <a
+                      href="https://github.com/thatrobotdev/cs-2340-team-website"
+                      className="text-link-style"
+                    >
+                      GitHub
+                    </a>
+                    . GitHub&apos;s version control and collaborative design
+                    made working together a seamless experience, without a worry
                     of messing up previously implemented code. Our progress was
                     documented in our team discord chat under Stand-Up Summaries
                     to keep tabs on progress and ensuring daily progress by team

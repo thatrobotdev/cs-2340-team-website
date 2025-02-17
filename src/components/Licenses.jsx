@@ -23,7 +23,7 @@ function Introduction() {
       <h2 className="text-center fw-bold fs-1">Licenses</h2>
 
       <details>
-      <summary className="fw-bold">Full license text and information**</summary>
+      <summary className="fw-bold">Full license text and information</summary>
       <pre>
       {SiteLicense}
       </pre>
