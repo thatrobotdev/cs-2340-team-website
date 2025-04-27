@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Carousel, Col, Container, Row } from "react-bootstrap";
 import ProjectsShowcaseCard from "./ProjectsShowcaseCard";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function ProjectsShowcase() {
   // Hover effect styles
