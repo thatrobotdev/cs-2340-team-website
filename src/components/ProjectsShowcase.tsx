@@ -88,26 +88,16 @@ function ProjectsShowcase() {
         <button
           onClick={handlePrev}
           aria-label="Previous"
-          style={{ ...buttonStyle, left: '-15px', zIndex:-100 }}
+          style={{ ...buttonStyle, left: '-30px', zIndex:100 }}
         >
           &lt;
         </button>
         <Carousel
-          controls
-          indicators
+          activeIndex={index}
+          onSelect={handleSelect}
+          controls={false}
+          indicators={false}
           interval={null}
-          prevIcon={
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            />
-          }
-          nextIcon={
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            />
-          }
         >
           <Carousel.Item>
             <Container className="py-4">
@@ -121,7 +111,7 @@ function ProjectsShowcase() {
                   >
 
                     <ProjectsShowcaseCard
-                      imageSrc={"/cs-2340-team-website/moviesstore.png"}
+                      imageSrc={"/cs-2340-team-website/moviestore.png"}
                       imageAlt={"Screenshot of moviesstore project."}
                       title={"Movies Store"}
                       description={
@@ -312,7 +302,7 @@ function ProjectsShowcase() {
 
                     <ProjectsShowcaseCard
                       imageSrc={"/cs-2340-team-website/meal_planner.png"}
-                      imageAlt={"Screenshot of moviesstore project."}
+                      imageAlt={"Screenshot of meal planner project."}
                       title={"GT Meal Planner"}
                       description={
                         "A showcase of a full-stack meal planner application for GT students"
@@ -479,7 +469,7 @@ function ProjectsShowcase() {
         <button
           onClick={handleNext}
           aria-label="Next"
-          style={{ ...buttonStyle, right: '-15px', zIndex:-1 }}
+          style={{ ...buttonStyle, right: '-30px', zIndex:10 }}
         >
           &gt;
         </button>

@@ -1,5 +1,6 @@
 import { Card } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
+import React from "react";
 
 interface Slide {
   src?: string;
@@ -9,6 +10,8 @@ interface Slide {
 
 interface ProjectsShowcaseCardProps {
   slides?: Slide[];
+  imageSrc?: string;
+  imageAlt?: string;
   title?: string;
   description?: string;
   projectLink?: string;
@@ -19,6 +22,8 @@ interface ProjectsShowcaseCardProps {
 const ProjectsShowcaseCard: React.FC<ProjectsShowcaseCardProps> = ({
   title,
   slides,
+  imageSrc,
+  imageAlt,
   description,
   projectLink,
   processLink,
@@ -26,7 +31,7 @@ const ProjectsShowcaseCard: React.FC<ProjectsShowcaseCardProps> = ({
 }) => {
   return (
     <Card className="mx-auto project-card" style={cardStyle}>
-      <Carousel variant='dark'>
+      <Carousel variant="dark" controls={false} indicators={false} interval={null}>
         {slides &&
           slides.map((slide, index) => (
             <Carousel.Item key={ index }>
@@ -47,6 +52,9 @@ const ProjectsShowcaseCard: React.FC<ProjectsShowcaseCardProps> = ({
       </Carousel>
 
       <Card.Body className="text-center">
+        {imageSrc && (
+          <Card.Img variant="top" src={imageSrc} alt={imageAlt} style={{ objectFit: "cover", width: "100%", height: "auto" }} />
+        )}
         {title && (
           <u style={{ fontSize: "30px" }} className=" fw-bold">
             <Card.Title className="black-text fw-bold fs-3">{title}</Card.Title>
