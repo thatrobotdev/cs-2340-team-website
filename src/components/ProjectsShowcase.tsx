@@ -309,7 +309,7 @@ function ProjectsShowcase() {
                       }
                       projectLink={"https://github.com/mwittland/gt-meal-planner"}
                       processLink={"https://thatrobotdev.pythonanywhere.com/"}
-                      videoLink={"https://drive.google.com/file/d/1icCEcxxs61XWzocsz1eZnpGsZGa1Yd-f/preview"}
+                      videoLink={"https://drive.google.com/file/d/1eIDwId93fiYxLNkHwnyWYPfoidruNGkP/preview?usp=sharing"}
                     />
                   </div>
                   <div
@@ -329,7 +329,7 @@ function ProjectsShowcase() {
                       <h3 className="black-text">DEMO</h3>
                     </u>
                     <div style={{ padding: "10px" }}></div>
-                    <iframe style={{ width: "100%", height: "400px" }} src="https://drive.google.com/file/d/1icCEcxxs61XWzocsz1eZnpGsZGa1Yd-f/preview"></iframe>
+                    <iframe style={{ width: "100%", height: "400px" }} src="https://drive.google.com/file/d/1eIDwId93fiYxLNkHwnyWYPfoidruNGkP/preview?usp=sharing"></iframe>
                   </div>
                 </Col>
 
