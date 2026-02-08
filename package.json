@@ -11,8 +11,8 @@
   "scripts": {
     "build": "next build",
     "start": "next dev",
-    "lint": "next lint",
-    "fix": "next lint --fix",
+    "lint": "eslint .",
+    "fix": "eslint --fix .",
     "test": "npm run lint && npm run build"
   },
   "dependencies": {
@@ -37,8 +37,8 @@
     "typescript": "~5.9.3"
   },
   "devDependencies": {
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^14.2.13",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.6",
     "raw-loader": "^4.0.2",
     "sass": "^1.71.0"
   }
