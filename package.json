@@ -16,7 +16,7 @@
     "test": "npm run lint && npm run build"
   },
   "dependencies": {
-    "@fontsource/open-sans": "^5.1.1",
+    "@fontsource/open-sans": "^5.2.7",
     "@fontsource/oswald": "^5.1.1",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
