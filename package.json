@@ -13,7 +13,7 @@
     "start": "next dev",
     "lint": "next lint",
     "fix": "next lint --fix",
-    "test": "npm run build"
+    "test": "npm run lint && npm run build"
   },
   "dependencies": {
     "@fontsource/open-sans": "^5.1.1",
